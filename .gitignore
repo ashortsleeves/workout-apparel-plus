@@ -19,6 +19,7 @@ Thumbs.db
 *.log
 *.sql
 *.sqlite
+config.yml
 
 # ignore compiled files
 *.com
