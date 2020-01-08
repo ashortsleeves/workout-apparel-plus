@@ -10,7 +10,7 @@ Jase Warner ( [https://jase.io](https://jase.io "Jase Warner’s website") )
 
 Gulp + Shopify is for those Developers wishing to use [Gulp.js](http://gulpjs.com/ "Gulp.js website") and Shopify’s [Theme Kit](https://shopify.github.io/themekit/ "Theme Kit Github page") to develop their Shopify theme &ndash; a tidy solution to the problem with Shopify not allowing sub-directories within the `/assets` directory.
 
-The theme is packaged with Gulp for watching and compiling assets in the `/dev` directory, including SCSS, JS, images and fonts. When modified, said assets are moved across to the `/assets` directory. 
+The theme is packaged with Gulp for watching and compiling assets in the `/dev` directory, including SCSS, JS, images and fonts. When modified, said assets are moved across to the `/assets` directory.
 
 A selection of helpful mixins is also included, most of which are featured in [this useful article](http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/ "Mixins article") by [@seb_ekstrom](https://twitter.com/seb_ekstrom "@seb_ekstrom on Twitter").
 
@@ -65,3 +65,10 @@ The Gulp build features the following helpful packages:
 * [Gulp.js](http://gulpjs.com/ "Gulp.js website")
 * [Theme Kit](https://shopify.github.io/themekit/ "Shopify Theme Kit Github page")
 * [SASS / SCSS](http://sass-lang.com/ "SASS website")
+
+## Additional instructions
+To run Gulp + Browersync, have the following commands running:
+
+In theme folder: `theme watch`
+In dev folder: `gulp watch`
+In theme folder: `browser-sync start --proxy "https://workout-apparel-plus-dev.myshopify.com/" --files "*/*.*" --reload-delay 4000`
