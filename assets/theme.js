@@ -67,6 +67,28 @@ jQuery(function ($) {
         });
     }
 
+    // toggles hamburger and nav open and closed states
+    var removeClass = true;
+    $(".hamburger").click(function () {
+        $(".hamburger").toggleClass('is-active');
+        $("#sideNav").toggleClass('sideNav-open');
+        $(".sideNavBody").toggleClass('sideNavBody-push');
+        removeClass = false;
+    });
+
+    $(".sideNav").click(function () {
+        removeClass = false;
+    });
+
+    document.addEventListener('touchstart', function (e) {
+        if (removeClass && !$(e.target).hasClass('sideNav') && $('.sideNav').has($(e.target)).length === 0) {
+            $(".hamburger").removeClass('is-active');
+            $("#sideNav").removeClass('sideNav-open');
+            $(".sideNavBody").removeClass('sideNavBody-push');
+        }
+        removeClass = true;
+    }, false);
+
     /* Form validation JS */
     /*==========================*/
 
@@ -105,5 +127,12 @@ jQuery(function ($) {
     $('.product-photo-thumb a').on('click', function (e) {
         e.preventDefault();
         switchImage($(this).attr('href'), null, $('.product-photo-container img')[0]);
+    });
+
+    /* Other Custom Stuff */
+    /*==========================*/
+
+    $('#user').click(function () {
+        $('.login').fadeIn(300);
     });
 });

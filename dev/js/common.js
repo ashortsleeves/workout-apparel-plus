@@ -26,6 +26,7 @@ const common = (($) => {
         ready: ready
     }
 
+
 })(jQuery);
 
 jQuery(common.ready);

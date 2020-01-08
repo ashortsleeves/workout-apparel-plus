@@ -1,3 +1,48 @@
-.header {
+header.banner {
+  padding: 15px;
 
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul.navPrimary {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 60px;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      li {
+        list-style-type: none;
+
+        a {
+          padding: 15px;
+        }
+      }
+    }
+
+    img.header-logo {
+      max-width: 250px;
+      height: auto;
+      align-self: center;
+    }
+
+    .login-menu {
+      position: relative;
+
+      .login {
+        position: absolute;
+        top: 100%;
+        display: none;
+        flex-direction: column;
+      }
+    }
+
+    i.fa-lg {
+      font-size: 35px;
+      margin: 0 30px 0 0;
+    }
+  }
 }

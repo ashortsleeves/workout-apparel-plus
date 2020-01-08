@@ -8,8 +8,8 @@ $yellow:                #ffc107;
 $green:                 #28a745;
 $cyan:                  #17a2b8;
 
-$brand-primary:         #0080b2;
-$brand-secondary:       #daaa49;
+$brand-primary:         #089675;
+$brand-secondary:       #089675;
 $brand-hover:           lighten($brand-primary, 5%);
 
 $theme-colors: (
@@ -24,8 +24,8 @@ $theme-colors: (
 );
 
 // Fonts
-$primary-font:          'Helvetica', sans-serif;
-$secondary-font:        'Helvetica',serif;
+$primary-font:          'Lato', sans-serif;
+$secondary-font:        'Raleway', sans-serif;
 $body-font-size:        15px;
 $body-font-weight:      400;
 $body-font:             $primary-font;
@@ -145,5 +145,5 @@ $bar_roundness: 0;
 $button_pad: 0;      // left/right padding between button area and bars.
 $button_bar_space: 8px;     // spacing between button bars
 $button_transistion_duration: 0.3s;  // transition duration
-$hamburger_normal: #fff;
-$hamburger_active: #fff;
+$hamburger_normal: $brand-primary;
+$hamburger_active: $brand-primary;
