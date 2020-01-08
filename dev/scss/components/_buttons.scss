@@ -1,0 +1,19 @@
+button {
+  background-color: $brand-primary;
+  border: transparent;
+  border-radius: 0;
+  color: $white;
+  display: inline-block;
+  font-family: $primary-font,sans-serif;
+  font-size: $body-font-size;
+  font-weight: 600;
+  line-height: 1rem;
+  padding: 10px;
+  transition: .3s;
+  white-space: normal;
+
+  &:hover,
+  &:focus {
+    background-color: $brand-hover;
+  }
+}

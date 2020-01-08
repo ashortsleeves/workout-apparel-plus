@@ -10,10 +10,10 @@
   {% if request.host != 'workout-apparel-plus-dev.myshopify.com' %}
      {{ content_for_header }}
    {% endif %}
-  {{ 'application.scss.css' | asset_url | stylesheet_tag }}
+
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {{ 'fontawesome.css' | asset_url | stylesheet_tag }}
-  {{ 'application.js' | asset_url | script_tag }}
+  {{ 'theme.js' | asset_url | script_tag }}
 
   {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">

@@ -1,0 +1,59 @@
+header.banner {
+  .sideNav {
+    width: $sideNavWidth;
+    #{$sideNavDirection}: -$sideNavWidth;
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    top: 0;
+    background: darken($brand-primary, 5%);
+    transition: all 0.3s ease;
+
+    a {
+      display: block;
+      color: #fff;
+      font-size: 16px;
+      padding: 15px 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    li.phone-number a {
+      background-color: darken($brand-primary, 15%);
+      font-size: 18px;
+
+      &::before {
+        font-size: 16px;
+      }
+    }
+
+    &.sideNav-open {
+      #{$sideNavDirection}: 0;
+      box-shadow: -1px 0 37px -8px rgba(0, 0, 0, 0.4);
+    }
+
+    ul.nav-walker {
+      ul.show {
+        position: relative !important;
+        transform: none !important;
+        background: $brand-primary;
+        margin-top: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* classes applied to the body */
+.sideNavBody {
+  overflow-x: hidden;
+  position: relative;
+  #{$sideNavDirection}: 0;
+  transition: all 0.3s ease;
+}
+
+.sideNavBody-push {
+  #{$sideNavDirection}: $sideNavWidth;
+}
